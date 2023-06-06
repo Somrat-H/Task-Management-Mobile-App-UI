@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:somrat/ui/navBar/home_page.dart';
+import 'package:somrat/ui/navBar/navbar.dart';
 import 'package:somrat/ui/splash_screen.dart';
 
 void main() {
@@ -13,7 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: NavBar(),
+
     );
   }
 }

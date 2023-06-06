@@ -4,6 +4,7 @@ import 'package:somrat/%20widget/custom_color.dart';
 import 'package:somrat/%20widget/myStyle.dart';
 import 'package:somrat/ui/login.dart';
 import 'package:somrat/ui/on_boarding3.dart';
+import 'package:somrat/ui/steeper3.dart';
 class Stepper2 extends StatelessWidget {
   const Stepper2({Key? key}) : super(key: key);
 
@@ -42,7 +43,12 @@ class Stepper2 extends StatelessWidget {
               left: 16,
               right: 16,
             ),
-              child: customButton(60, double.infinity, btnColor, 28, myStyle('Create Your Own Team', 16, Colors.white, FontWeight.w700)),
+              child: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (_)=> Steeper3()));
+                },
+                child:  customButton(60, double.infinity, btnColor, 28, myStyle('Create Your Own Team', 16, Colors.white, FontWeight.w700)),
+              ),
             ),
             SizedBox(height: 25,),
 

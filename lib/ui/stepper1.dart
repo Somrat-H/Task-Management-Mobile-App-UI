@@ -56,7 +56,7 @@ class Stepper1 extends StatelessWidget {
               padding: const EdgeInsets.only(left: 18),
               child: Align(
                 alignment: Alignment.topLeft,
-                child: myStyle('Your Email Address', 17, Colors.grey, FontWeight.normal),
+                child: myStyle('Your Full Name', 17, Colors.grey, FontWeight.normal),
               ),
             ),
             SizedBox(
@@ -70,7 +70,7 @@ class Stepper1 extends StatelessWidget {
 
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.mail, color: Colors.grey,),
+                  prefixIcon: Icon(Icons.person_4_rounded, color: Colors.grey,),
                   hintText: 'Enter your email address',
 
                   hintStyle: TextStyle(
