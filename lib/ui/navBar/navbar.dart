@@ -12,22 +12,21 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
-  List<Widget> page = [HomePage(), Calender(), Project(), Profile()];
-  int currenIndex = 0;
+  List<Widget> page = [const HomePage(), const Calender(), const Project(), const Profile()];
+  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
         backgroundColor: bgColor,
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Color(0xff246BFD),
+          backgroundColor: const Color(0xff246BFD),
           onPressed: (){
-
           },
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        body: page[currenIndex],
+        body: page[currentIndex],
         bottomNavigationBar: Theme(
           data:Theme.of(context).copyWith(
             // sets the background color of the `BottomNavigationBar`
@@ -35,18 +34,18 @@ class _NavBarState extends State<NavBar> {
 
               ),
           child: BottomNavigationBar(
-            currentIndex: currenIndex,
+            currentIndex: currentIndex,
             onTap: (v){
               setState(() {
-                currenIndex = v;
+                currentIndex = v;
               });
             },
               type: BottomNavigationBarType.fixed,
               selectedItemColor: Colors.white,
-            selectedLabelStyle: TextStyle(
+            selectedLabelStyle: const TextStyle(
               color: Colors.white,
             ),
-            unselectedLabelStyle: TextStyle(
+            unselectedLabelStyle: const TextStyle(
               color: Colors.grey,
             ),
               unselectedItemColor: Colors.grey,
@@ -54,10 +53,10 @@ class _NavBarState extends State<NavBar> {
             BottomNavigationBarItem(
 
                 icon: Image.asset('assets/Layout.png'), label: 'My Task'),
-            BottomNavigationBarItem(icon: Icon(Icons.calendar_today_outlined), label: 'Calender'),
+            const BottomNavigationBarItem(icon: Icon(Icons.calendar_today_outlined), label: 'Calender'),
 
-            BottomNavigationBarItem(icon: Icon(Icons.file_open_sharp), label: 'Project'),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+            const BottomNavigationBarItem(icon: Icon(Icons.file_open_sharp), label: 'Project'),
+            const BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
           ]),
         )
 

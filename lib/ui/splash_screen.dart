@@ -9,7 +9,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff191A22),
+      backgroundColor: const Color(0xff191A22),
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.center,
         // crossAxisAlignment: CrossAxisAlignment.center,
@@ -19,16 +19,16 @@ class SplashScreen extends StatelessWidget {
             child: Container(
               height: 60,
               width: 60,
-              color: Color(0xff292B3E),
-              child: Icon(Icons.vaccines_rounded, color: Colors.white,),
+              color: const Color(0xff292B3E),
+              child: const Icon(Icons.vaccines_rounded, color: Colors.white,),
             ),
           ),
-          Padding(padding: EdgeInsets.only(top: 32),
-          child: myStyle('RANCANG', 36, Color(0xffE4E4E6), FontWeight.bold),
+          Padding(padding: const EdgeInsets.only(top: 32),
+          child: myStyle('RANCHING', 36, const Color(0xffE4E4E6), FontWeight.bold),
 
           ),
-          Padding(padding: EdgeInsets.only(left: 8),
-            child: myStyle('Your Personal Task Manager', 17, Color(0xffE9E9EB), FontWeight.normal),
+          Padding(padding: const EdgeInsets.only(left: 8),
+            child: myStyle('Your Personal Task Manager', 17, const Color(0xffE9E9EB), FontWeight.normal),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 270, left: 16, right: 16),
@@ -41,7 +41,7 @@ class SplashScreen extends StatelessWidget {
                   width: double.infinity,
                  decoration: BoxDecoration(
                    borderRadius: BorderRadius.circular(28),
-                   color: Color(0xff246BFD),
+                   color: const Color(0xff246BFD),
                  ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -49,7 +49,7 @@ class SplashScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           myStyle("Getting Started", 17, Colors.white, FontWeight.w600),
-                          Icon(Icons.arrow_forward_ios, color: Colors.white,size: 15,),
+                          const Icon(Icons.arrow_forward_ios, color: Colors.white,size: 15,),
                         ],
                   ),
                 ),

@@ -17,7 +17,7 @@ class OnBoarding3 extends StatelessWidget {
 
             Stack(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 400,
                   width: double.infinity,
                 ),
@@ -32,7 +32,7 @@ class OnBoarding3 extends StatelessWidget {
                           width: 400,
 
                           decoration: BoxDecoration(
-                              color: Color(0xff8E8E93),
+                              color: const Color(0xff8E8E93),
                               borderRadius: BorderRadius.circular(40)
                           ),
                         )
@@ -43,7 +43,7 @@ class OnBoarding3 extends StatelessWidget {
 
 
 
-            SizedBox(height: 30,),
+            const SizedBox(height: 30,),
 
 
 
@@ -51,11 +51,11 @@ class OnBoarding3 extends StatelessWidget {
             // Padding(padding: EdgeInsets.only(left: 16, right: 16),
             //   child:  myStyle(, 36, Colors.white, FontWeight.w700),
             // ),
-            Padding(padding:  EdgeInsets.only(left: 16, right: 16, top: 32),
+            Padding(padding:  const EdgeInsets.only(left: 16, right: 16, top: 32),
               child:  Container(
                 height: 8,
                 width: 48,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage('assets/Slider_3.png',),
                       // fit: BoxFit.fill,
@@ -64,16 +64,16 @@ class OnBoarding3 extends StatelessWidget {
               ),
             ),
 
-            Padding(padding: EdgeInsets.only(top: 36, left: 16, right: 16),
-              child: customButton(60, double.infinity, Color(0xff246BFD), 28, myStyle('Sign Up', 17, Colors.white, FontWeight.w600)),
+            Padding(padding: const EdgeInsets.only(top: 36, left: 16, right: 16),
+              child: customButton(60, double.infinity, const Color(0xff246BFD), 28, myStyle('Sign Up', 17, Colors.white, FontWeight.w600)),
             ),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.only(left: 16, right: 16),
               child: InkWell(
                 onTap: (){
 
-                  Navigator.push(context, MaterialPageRoute(builder: (_)=> LogIn()));
+                  Navigator.push(context, MaterialPageRoute(builder: (_)=> const LogIn()));
                 },
                 child: Container(
                   height: 60,

@@ -15,12 +15,12 @@ class _LogInState extends State<LogIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff191A22),
+      backgroundColor: const Color(0xff191A22),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Container(
+            SizedBox(
               height: 65,
               width: double.infinity,
               child: Padding(
@@ -29,14 +29,14 @@ class _LogInState extends State<LogIn> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (_)=> OnBoarding3()));
-                    }, icon: Icon(Icons.close, color: Colors.white,)),
+                      Navigator.push(context, MaterialPageRoute(builder: (_)=> const OnBoarding3()));
+                    }, icon: const Icon(Icons.close, color: Colors.white,)),
                     myStyle('Sign Up', 16, Colors.white, FontWeight.w700),
                   ],
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 18,
             ),
             Padding(
@@ -46,31 +46,31 @@ class _LogInState extends State<LogIn> {
                 child: myStyle('Your Email Address', 17, Colors.grey, FontWeight.normal),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 15, right: 15),
+              padding: const EdgeInsets.only(left: 15, right: 15),
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
 
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.mail, color: Colors.grey,),
+                  prefixIcon: const Icon(Icons.mail, color: Colors.grey,),
                   hintText: 'Enter your email address',
 
-                  hintStyle: TextStyle(
+                  hintStyle: const TextStyle(
                     color: Colors.grey,
                   ),
                     enabledBorder:  OutlineInputBorder(
-                      borderSide:  BorderSide(color: Colors.grey, width: 1.5),
+                      borderSide:  const BorderSide(color: Colors.grey, width: 1.5),
                       borderRadius: BorderRadius.circular(25),
                     ),
 
                 ),
               ),
-            ), SizedBox(
+            ), const SizedBox(
               height: 35,
             ),
         Padding(
@@ -80,38 +80,38 @@ class _LogInState extends State<LogIn> {
             child: myStyle('Your Password', 17, Colors.grey, FontWeight.normal),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         Padding(
-          padding: EdgeInsets.only(left: 15, right: 15),
+          padding: const EdgeInsets.only(left: 15, right: 15),
           child: TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder(
 
                 borderRadius: BorderRadius.circular(15),
               ),
-              prefixIcon: Icon(Icons.key, color: Colors.grey,),
+              prefixIcon: const Icon(Icons.key, color: Colors.grey,),
               hintText: 'Enter your passowrd',
 
-              hintStyle: TextStyle(
+              hintStyle: const TextStyle(
                 color: Colors.grey,
               ),
               enabledBorder:  OutlineInputBorder(
-                borderSide:  BorderSide(color: Colors.grey, width: 1.5),
+                borderSide:  const BorderSide(color: Colors.grey, width: 1.5),
                 borderRadius: BorderRadius.circular(25),
               ),
 
             ),
           ),
         ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
-           Padding(padding: EdgeInsets.only(left: 16, right: 16),
+           Padding(padding: const EdgeInsets.only(left: 16, right: 16),
            child:  InkWell(
              onTap: (){
-               Navigator.push(context, MaterialPageRoute(builder: (_)=> Signup()));
+               Navigator.push(context, MaterialPageRoute(builder: (_)=> const Signup()));
              },
              child: customButton(60, double.infinity, btnColor, 28, myStyle('Login', 17, Colors.white, FontWeight.w600)),
            )

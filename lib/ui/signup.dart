@@ -16,7 +16,7 @@ class Signup extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: 65,
               width: 375,
               child: Padding(
@@ -25,11 +25,11 @@ class Signup extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (_)=> OnBoarding3()));
-                    }, icon: Icon(Icons.close, color: Colors.white,)),
+                      Navigator.push(context, MaterialPageRoute(builder: (_)=> const OnBoarding3()));
+                    }, icon: const Icon(Icons.close, color: Colors.white,)),
                    InkWell(
                      onTap: (){
-                       Navigator.push(context, MaterialPageRoute(builder: (_)=> LogIn()));
+                       Navigator.push(context, MaterialPageRoute(builder: (_)=> const LogIn()));
                      },
                      child: myStyle('Login', 17, Colors.white, FontWeight.w600),
                    )
@@ -37,7 +37,7 @@ class Signup extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Padding(
@@ -47,38 +47,38 @@ class Signup extends StatelessWidget {
                 child: myStyle('Your Email Address', 17, Colors.grey, FontWeight.normal),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 15, right: 15),
+              padding: const EdgeInsets.only(left: 15, right: 15),
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
 
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.mail, color: Colors.grey,),
+                  prefixIcon: const Icon(Icons.mail, color: Colors.grey,),
                   hintText: 'Enter your email address',
 
-                  hintStyle: TextStyle(
+                  hintStyle: const TextStyle(
                     color: Colors.grey,
                   ),
                   enabledBorder:  OutlineInputBorder(
-                    borderSide:  BorderSide(color: Colors.grey, width: 1.5),
+                    borderSide:  const BorderSide(color: Colors.grey, width: 1.5),
                     borderRadius: BorderRadius.circular(25)
                   ),
 
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Padding(padding: EdgeInsets.only(left: 16, right: 16),
+            Padding(padding: const EdgeInsets.only(left: 16, right: 16),
                 child:  InkWell(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (_)=> Stepper1()));
+                    Navigator.push(context, MaterialPageRoute(builder: (_)=> const Stepper1()));
                   },
                   child: customButton(60, double.infinity, btnColor, 28, myStyle('Sign Up', 17, Colors.white, FontWeight.w600)),
                 )

@@ -13,7 +13,7 @@ class Steeper3 extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: 65,
               width: double.infinity,
               child: Padding(
@@ -23,8 +23,8 @@ class Steeper3 extends StatelessWidget {
                   children: [
                     IconButton(onPressed: (){
                       // Navigator.push(context, MaterialPageRoute(builder: (_)=> ));
-                    }, icon: Icon(Icons.arrow_back_ios, color: Colors.white,)),
-                    SizedBox(width: 70,),
+                    }, icon: const Icon(Icons.arrow_back_ios, color: Colors.white,)),
+                    const SizedBox(width: 70,),
                     Padding(
                       padding: const EdgeInsets.only(top: 14),
                       child: Image.asset('assets/steepper3.png'),
@@ -35,7 +35,7 @@ class Steeper3 extends StatelessWidget {
               ),
             ),
             myStyle('Create Your Own Team?', 17, Colors.white, FontWeight.w700),
-            SizedBox(height: 16,),
+            const SizedBox(height: 16,),
             Padding(
               padding: const EdgeInsets.only(left: 16),
               child: Align(
@@ -43,32 +43,32 @@ class Steeper3 extends StatelessWidget {
                 child: myStyle('Your Team Name', 16, Colors.grey, FontWeight.w400),
               ),
             ),
-            SizedBox(height: 16,),
-            Padding(padding: EdgeInsets.only(left: 16, right: 16),
+            const SizedBox(height: 16,),
+            Padding(padding: const EdgeInsets.only(left: 16, right: 16),
               child:TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
 
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.person_4_rounded, color: Colors.grey,),
+                  prefixIcon: const Icon(Icons.person_4_rounded, color: Colors.grey,),
                   hintText: 'e.g Parto Team',
 
-                  hintStyle: TextStyle(
+                  hintStyle: const TextStyle(
                     color: Colors.grey,
                   ),
                   enabledBorder:  OutlineInputBorder(
-                    borderSide:  BorderSide(color: Colors.grey, width: 1.5),
+                    borderSide:  const BorderSide(color: Colors.grey, width: 1.5),
                     borderRadius: BorderRadius.circular(25),
                   ),
 
                 ),
               ),
             ),
-            SizedBox(height: 200,),
+            const SizedBox(height: 200,),
             InkWell(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (_)=> Stepper4()));
+                Navigator.push(context, MaterialPageRoute(builder: (_)=> const Stepper4()));
               },
               child: customButton(58, double.infinity, btnColor, 28, myStyle('Continue', 17, Colors.white, FontWeight.w600)),
             )

@@ -20,7 +20,7 @@ class OnBoarding1 extends StatelessWidget {
 
             Stack(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 400,
                   width: double.infinity,
                 ),
@@ -35,7 +35,7 @@ class OnBoarding1 extends StatelessWidget {
                           width: 400,
 
                           decoration: BoxDecoration(
-                              color: Color(0xff8E8E93),
+                              color: const Color(0xff8E8E93),
                               borderRadius: BorderRadius.circular(40)
                           ),
                         )
@@ -82,10 +82,10 @@ class OnBoarding1 extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                    Padding(padding: EdgeInsets.only(left: 16, right: 16),
+                    Padding(padding: const EdgeInsets.only(left: 16, right: 16),
                       child:  myStyle(data[index], 36, Colors.white, FontWeight.w700),
                     ),
-                    Padding(padding:  EdgeInsets.only(left: 16, right: 16, top: 32),
+                    Padding(padding:  const EdgeInsets.only(left: 16, right: 16, top: 32),
                       child:  Container(
                         height: 8,
                         width: 48,
@@ -102,10 +102,10 @@ class OnBoarding1 extends StatelessWidget {
               }),
             ),
 
-            Padding(padding: EdgeInsets.only(top: 36, left: 16, right: 16),
-              child: customButton(60, double.infinity, Color(0xff246BFD), 28, myStyle('Sign Up', 17, Colors.white, FontWeight.w600)),
+            Padding(padding: const EdgeInsets.only(top: 36, left: 16, right: 16),
+              child: customButton(60, double.infinity, const Color(0xff246BFD), 28, myStyle('Sign Up', 17, Colors.white, FontWeight.w600)),
             ),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             Padding(
               padding: const EdgeInsets.only(left: 16, right: 16),
 
@@ -113,7 +113,7 @@ class OnBoarding1 extends StatelessWidget {
 
                   child: InkWell(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (_)=> LogIn()));
+                      Navigator.push(context, MaterialPageRoute(builder: (_)=> const LogIn()));
                     },
                     child: Container(
                       height: 60,
