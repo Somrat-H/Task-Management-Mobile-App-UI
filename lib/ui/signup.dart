@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:somrat/%20widget/custom_button.dart';
-import 'package:somrat/%20widget/custom_color.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/ widget//custom_button.dart';
+import 'package:somrat/ widget/custom_color.dart';
+import 'package:somrat/ widget/myStyle.dart';
 import 'package:somrat/ui/login.dart';
 import 'package:somrat/ui/on_boarding3.dart';
 import 'package:somrat/ui/stepper1.dart';

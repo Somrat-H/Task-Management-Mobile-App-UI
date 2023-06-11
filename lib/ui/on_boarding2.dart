@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:somrat/%20widget/custom_button.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/ widget/custom_button.dart';
+import 'package:somrat/ widget/myStyle.dart';
 import 'package:somrat/ui/login.dart';
 import 'package:somrat/ui/on_boarding3.dart';
 class OnBoarding2 extends StatelessWidget {
@@ -49,9 +49,9 @@ class OnBoarding2 extends StatelessWidget {
 
 
 
-            Padding(padding: EdgeInsets.only(left: 16, right: 16),
-              child:  myStyle('Create a Task and\nAssign it to Your\nTeam Members', 36, Colors.white, FontWeight.w700),
-            ),
+            // Padding(padding: EdgeInsets.only(left: 16, right: 16),
+            //   child:  myStyle(, 36, Colors.white, FontWeight.w700),
+            // ),
             Padding(padding:  EdgeInsets.only(left: 16, right: 16, top: 32),
               child:  InkWell(
                 onTap: (){

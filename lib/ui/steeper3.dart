@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:somrat/%20widget/custom_button.dart';
-import 'package:somrat/%20widget/custom_color.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/ widget/custom_button.dart';
+import 'package:somrat/ widget/custom_color.dart';
+import 'package:somrat/ widget/myStyle.dart';
 import 'package:somrat/ui/steeper4.dart';
 class Steeper3 extends StatelessWidget {
   const Steeper3({Key? key}) : super(key: key);
@@ -12,7 +12,6 @@ class Steeper3 extends StatelessWidget {
       backgroundColor: bgColor,
       body: SafeArea(
         child: Column(
-
           children: [
             Container(
               height: 65,

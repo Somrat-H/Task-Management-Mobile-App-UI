@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:somrat/%20widget/custom_button.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+
+import 'package:somrat/ widget/custom_button.dart';
+import 'package:somrat/ widget/myStyle.dart';
 import 'package:somrat/ui/login.dart';
 import 'package:somrat/ui/on_boarding2.dart';
 class OnBoarding1 extends StatelessWidget {
-  const OnBoarding1({Key? key}) : super(key: key);
-
+  OnBoarding1({Key? key}) : super(key: key);
+  List<String> data = ['Update Progress\nYour Work for The\nTeam', 'Create a Task and\nAssign it to Your\nTeam Members', 'Get Notified when\nyou Get a New\nAssignment'];
+  List<String> img = ['assets/Slider_1.png', 'assets/Slider_2.png', 'assets/Slider_3.png' ];
   @override
   Widget build(BuildContext context) {
 
@@ -44,41 +45,67 @@ class OnBoarding1 extends StatelessWidget {
             ),
 
 
+            // SizedBox(height: 30,),
 
-            SizedBox(height: 30,),
+            // Container(
+            //   height: 200,
+            //   width: double.infinity,
+            //   color: Colors.red,
+            //   child: ListView.builder(
+            //      shrinkWrap: true,
+            //       scrollDirection: Axis.horizontal,
+            //       itemCount: 3,
+            //       itemBuilder: (_, index){
+            //     return Container(
+            //       width: 380,
+            //       child: Column(
+            //         children: [
+            //           Text('lkdfjakldsjf'),
+            //           Text('adkfjadjkf'),
+            //         ],
+            //       ),
+            //     );
+            //   }),
+            // ),
+            Container(
 
-
-
-
-            Padding(padding: EdgeInsets.only(left: 16, right: 16),
-              child:  myStyle('Update Progress\nYour Work for The\nTeam', 36, Colors.white, FontWeight.w700),
-            ),
-            Padding(padding:  EdgeInsets.only(left: 16, right: 16, top: 32),
-              child:  InkWell(
-
-
-                  onTap: (){
-
-    Navigator.push(context, MaterialPageRoute(builder: (_)=> OnBoarding2()));
-
-    },
-                child: Container(
-                  height: 8,
-                  width: 48,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/Slider_1.png',),
-                        // fit: BoxFit.fill,
-                      )
-                  ),
-                ),
-              ),
+              height: 200,
+              width: double.infinity,
+              child: ListView.builder(
+                shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  itemCount: img.length,
+                  itemBuilder: (_, index){
+                return SizedBox(
+                  height: 200,
+                  width: 350,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                    Padding(padding: EdgeInsets.only(left: 16, right: 16),
+                      child:  myStyle(data[index], 36, Colors.white, FontWeight.w700),
+                    ),
+                    Padding(padding:  EdgeInsets.only(left: 16, right: 16, top: 32),
+                      child:  Container(
+                        height: 8,
+                        width: 48,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage(img[index]),
+                              // fit: BoxFit.fill,
+                            )
+                        ),
+                      ),
+                    ),
+                  ],),
+                );
+              }),
             ),
 
             Padding(padding: EdgeInsets.only(top: 36, left: 16, right: 16),
               child: customButton(60, double.infinity, Color(0xff246BFD), 28, myStyle('Sign Up', 17, Colors.white, FontWeight.w600)),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 10,),
             Padding(
               padding: const EdgeInsets.only(left: 16, right: 16),
 

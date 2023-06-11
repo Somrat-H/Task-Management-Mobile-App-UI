@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/ widget/myStyle.dart';
 import 'package:somrat/ui/on_boarding1.dart';
 import 'package:somrat/ui/on_boarding2.dart';
 

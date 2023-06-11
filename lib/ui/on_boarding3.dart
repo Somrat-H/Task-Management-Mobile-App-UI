@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:somrat/%20widget/custom_button.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/ widget/custom_button.dart';
+import 'package:somrat/ widget/myStyle.dart';
 import 'package:somrat/ui/login.dart';
 class OnBoarding3 extends StatelessWidget {
   const OnBoarding3({Key? key}) : super(key: key);
@@ -48,9 +48,9 @@ class OnBoarding3 extends StatelessWidget {
 
 
 
-            Padding(padding: EdgeInsets.only(left: 16, right: 16),
-              child:  myStyle('Get Notified when\nyou Get a New\nAssignment', 36, Colors.white, FontWeight.w700),
-            ),
+            // Padding(padding: EdgeInsets.only(left: 16, right: 16),
+            //   child:  myStyle(, 36, Colors.white, FontWeight.w700),
+            // ),
             Padding(padding:  EdgeInsets.only(left: 16, right: 16, top: 32),
               child:  Container(
                 height: 8,
