@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_color.dart';
+import 'package:somrat/%20widget/custom_modal_sheet.dart';
 import 'package:somrat/ui/navBar/calender.dart';
 import 'package:somrat/ui/navBar/home_page.dart';
 import 'package:somrat/ui/navBar/person.dart';
@@ -22,6 +23,7 @@ class _NavBarState extends State<NavBar> {
         floatingActionButton: FloatingActionButton(
           backgroundColor: const Color(0xff246BFD),
           onPressed: (){
+            myCustomBottomSheet(context);
           },
           child: const Icon(Icons.add),
         ),
