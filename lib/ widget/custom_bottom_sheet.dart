@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_button.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
 
 myBottomSheet(BuildContext context) {
   return showModalBottomSheet<dynamic>(
@@ -19,41 +19,41 @@ myBottomSheet(BuildContext context) {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Icon(Icons.cancel_outlined),
-                      color: Color(0xff8A8A8E),
+                      icon: const Icon(Icons.cancel_outlined),
+                      color: const Color(0xff8A8A8E),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Container(
                     height: 200,
                     decoration: BoxDecoration(
-                        color: Color(0xff8E8E93),
+                        color: const Color(0xff8E8E93),
                         borderRadius: BorderRadius.circular(8)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Align(
                     alignment: Alignment.topLeft,
-                    child: myStyle('Add New Member', 16, Color(0xffF8F8F8),
+                    child: myStyle('Add New Member', 16, const Color(0xffF8F8F8),
                         FontWeight.w700),
                   ),
                   myStyle(
                       "Make your team good with us. invite your team members. to get goingMake your team good with us. invite your team\nmembers. to get going",
                       12,
-                      Color(0xffE9E9EB),
+                      const Color(0xffE9E9EB),
                       FontWeight.w400),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Align(
                     alignment: Alignment.topLeft,
                     child: myStyle(
-                        "Team Members", 16, Color(0xffF8F8F8), FontWeight.w400),
+                        "Team Members", 16, const Color(0xffF8F8F8), FontWeight.w400),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                   TextField(
@@ -65,19 +65,19 @@ myBottomSheet(BuildContext context) {
                       )),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
                     children: [
-                      Icon(Icons.add),
-                      SizedBox(
+                      const Icon(Icons.add),
+                      const SizedBox(
                         width: 60,
                       ),
                       myStyle('Add Members', 16, Colors.white, FontWeight.w600),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25,
                   ),
                   customButton(60, double.infinity, Colors.blue, 25,

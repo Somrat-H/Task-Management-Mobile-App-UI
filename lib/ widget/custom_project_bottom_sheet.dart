@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_button.dart';
 import 'package:somrat/%20widget/custom_color_container.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
 myCustomProjectBottomSheet(BuildContext context){
   return showModalBottomSheet<dynamic> (
       isScrollControlled: true,
@@ -18,16 +18,16 @@ myCustomProjectBottomSheet(BuildContext context){
                   myStyle('Add Tags', 16, Colors.white, FontWeight.w700),
                   IconButton(onPressed: (){
                     Navigator.pop(context);
-                  }, icon: Icon(Icons.cancel_outlined), color: Color(0xff8A8A8E),),
+                  }, icon: const Icon(Icons.cancel_outlined), color: const Color(0xff8A8A8E),),
                 ],
               ),
-              SizedBox(height: 15,),
+              const SizedBox(height: 15,),
              
               Align(
                 alignment: Alignment.topLeft,
-                child:    myStyle("Tag Name", 16, Color(0xffF8F8F8), FontWeight.w400),
+                child:    myStyle("Tag Name", 16, const Color(0xffF8F8F8), FontWeight.w400),
               ),
-              SizedBox(height: 8,),
+              const SizedBox(height: 8,),
               TextField(
                 decoration: InputDecoration(
                   hintText: 'Select Your Team',
@@ -40,22 +40,22 @@ myCustomProjectBottomSheet(BuildContext context){
                   ),
                 ),
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               Align(
                 alignment: Alignment.topLeft,
-                child:    myStyle("Color", 16, Color(0xffF8F8F8), FontWeight.w400),
+                child:    myStyle("Color", 16, const Color(0xffF8F8F8), FontWeight.w400),
               ),
               GridView.builder(
                 shrinkWrap: true,
                 itemCount: myContainer.length,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     mainAxisSpacing: 7,
                     crossAxisSpacing: 7,
                     crossAxisCount: 5, ),
                   itemBuilder: (_, index){
                     return  Expanded(child: myContainer[index]);
                   }),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
               customButton(60, double.infinity, Colors.blue, 25, myStyle('Invite',16, Colors.white, FontWeight.w700)),

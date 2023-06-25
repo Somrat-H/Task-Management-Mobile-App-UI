@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_button.dart';
 import 'package:somrat/%20widget/custom_color.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
+import 'package:somrat/ui/navBar/navbar.dart';
 import 'package:somrat/ui/on_boarding3.dart';
-import 'package:somrat/ui/signup.dart';
 class LogIn extends StatefulWidget {
   const LogIn({Key? key}) : super(key: key);
 
@@ -20,24 +20,20 @@ class _LogInState extends State<LogIn> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(
-              height: 65,
-              width: double.infinity,
-              child: Padding(
-                padding: const EdgeInsets.all(22.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    IconButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (_)=>  OnBoarding3()));
-                    }, icon: const Icon(Icons.close, color: Colors.white,)),
-                    myStyle('Sign Up', 16, Colors.white, FontWeight.w700),
-                  ],
-                ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (_)=>  const OnBoarding3()));
+                  }, icon: const Icon(Icons.close, color: Colors.white,)),
+                  myStyle('Sign Up', 16, Colors.white, FontWeight.w700),
+                ],
               ),
             ),
             const SizedBox(
-              height: 18,
+              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 18),
@@ -111,7 +107,7 @@ class _LogInState extends State<LogIn> {
            Padding(padding: const EdgeInsets.only(left: 16, right: 16),
            child:  InkWell(
              onTap: (){
-               Navigator.push(context, MaterialPageRoute(builder: (_)=> const Signup()));
+               Navigator.push(context, MaterialPageRoute(builder: (_)=> const NavBar()));
              },
              child: customButton(60, double.infinity, btnColor, 28, myStyle('Login', 17, Colors.white, FontWeight.w600)),
            )

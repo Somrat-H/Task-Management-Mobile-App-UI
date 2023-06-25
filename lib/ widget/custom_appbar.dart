@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
 
 customAppBar(String title, ){
-  return  Container(
+  return  SizedBox(
     height: 60,
     width: double.infinity,
     child: Padding(
@@ -16,20 +16,20 @@ customAppBar(String title, ){
               Container(
                 height: 33,
                 width: 33,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.grey
                 ),
               ),
-              SizedBox(width: 10,),
+              const SizedBox(width: 10,),
               myStyle(title, 16, Colors.white, FontWeight.w700),
-              SizedBox(width: 10,),
-              Icon(Icons.arrow_drop_down_sharp, color: Colors.white,),
+              const SizedBox(width: 10,),
+              const Icon(Icons.arrow_drop_down_sharp, color: Colors.white,),
 
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.only(
+          const Padding(
+            padding: EdgeInsets.only(
               top: 20,
               bottom: 18,
 

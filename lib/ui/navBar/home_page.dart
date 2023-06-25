@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_appbar.dart';
 import 'package:somrat/%20widget/custom_color.dart';
 import 'package:somrat/%20widget/custom_tile.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
 import 'package:somrat/ui/data/dummy_data.dart';
 class HomePage extends StatelessWidget {
   const HomePage({Key ?key}) : super(key: key);

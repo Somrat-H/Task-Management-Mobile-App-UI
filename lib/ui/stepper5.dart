@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_button.dart';
 import 'package:somrat/%20widget/custom_color.dart';
 import 'package:somrat/%20widget/custom_steeper_bar.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
+import 'package:somrat/ui/navBar/navbar.dart';
+import 'package:somrat/ui/steeper4.dart';
 class Stepper5 extends StatelessWidget {
   const Stepper5({Key? key}) : super(key: key);
 
@@ -14,9 +16,18 @@ class Stepper5 extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            customStepperAppBar('assets/steeper5.png', (){
-
+            customStepperAppBar('assets/steepper5.png', (){
+              Navigator.push(context, MaterialPageRoute(builder: (_)=> const Stepper4()));
             }),
+            // Row(
+            //   children: [
+            //     IconButton(onPressed: (){
+
+            //     }, icon: Icon(Icons.arrow_back_ios, color: Colors.white,)),
+            //     Image.asset('assets/steepper5.png'),
+            //   ],
+            // ),
+            const SizedBox(height: 20,),
             myStyle('Invite Your Team Member', 16, Colors.white, FontWeight.w700),
             const SizedBox(height: 16,),
             Padding(
@@ -51,9 +62,11 @@ class Stepper5 extends StatelessWidget {
             const SizedBox(height: 50,),
             InkWell(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (_)=> const Stepper5()));
+                Navigator.push(context, MaterialPageRoute(builder: (_)=> const NavBar()));
               },
-              child: customButton(58, double.infinity, btnColor, 28, myStyle('Continue', 17, Colors.white, FontWeight.w600)),
+              child:  Padding(padding: const EdgeInsets.only(left: 16, right: 16),
+                child: customButton(58, double.infinity, btnColor, 28, myStyle('Continue', 17, Colors.white, FontWeight.w600)),
+              ),
             )
 
           ],

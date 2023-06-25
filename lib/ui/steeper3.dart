@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:somrat/ widget/custom_button.dart';
 import 'package:somrat/ widget/custom_color.dart';
-import 'package:somrat/ widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
 import 'package:somrat/ui/steeper4.dart';
 class Steeper3 extends StatelessWidget {
   const Steeper3({Key? key}) : super(key: key);
@@ -34,6 +34,7 @@ class Steeper3 extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 25,),
             myStyle('Create Your Own Team?', 17, Colors.white, FontWeight.w700),
             const SizedBox(height: 16,),
             Padding(
@@ -65,12 +66,14 @@ class Steeper3 extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 200,),
+            const SizedBox(height: 30,),
             InkWell(
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (_)=> const Stepper4()));
               },
-              child: customButton(58, double.infinity, btnColor, 28, myStyle('Continue', 17, Colors.white, FontWeight.w600)),
+              child: Padding(padding: const EdgeInsets.only(left: 16, right: 16),
+                child: customButton(58, double.infinity, btnColor, 28, myStyle('Continue', 17, Colors.white, FontWeight.w600)),
+              ),
             )
 
 

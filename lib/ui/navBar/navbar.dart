@@ -13,7 +13,7 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
-  List<Widget> page = [const HomePage(), const Calender(), const Project(), const Profile()];
+  List<Widget> page = [const HomePage(),  const Calender(), const Project(), const Profile()];
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {

@@ -2,20 +2,20 @@
 
 import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_bottom_sheet.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
 class TeamMember extends StatelessWidget {
   const TeamMember({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff191A22),
+      backgroundColor: const Color(0xff191A22),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blue,
         onPressed: (){
               myBottomSheet(context);
         },
-        child: Icon(Icons.add, color: Colors.white
+        child: const Icon(Icons.add, color: Colors.white
           ,),
       ),
       body: SafeArea(
@@ -29,18 +29,18 @@ class TeamMember extends StatelessWidget {
                       onPressed: (){
                         Navigator.pop(context);
                       },
-                    icon: Icon(Icons.arrow_back_ios),
+                    icon: const Icon(Icons.arrow_back_ios),
                       ),
-                  SizedBox(width: 80,),
+                  const SizedBox(width: 80,),
                   myStyle('Parto Team', 16, Colors.white, FontWeight.w700),
                 ],
               ),
-              SizedBox(height: 35,),
+              const SizedBox(height: 35,),
               Expanded(
                 child: GridView.builder(
                   scrollDirection: Axis.vertical,
                   shrinkWrap: true,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisSpacing: 10,
                       crossAxisCount:  2,
                     mainAxisSpacing: 10,
@@ -52,7 +52,7 @@ class TeamMember extends StatelessWidget {
                         width: 170,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xff292B3E)
+                          color: const Color(0xff292B3E)
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
@@ -63,7 +63,7 @@ class TeamMember extends StatelessWidget {
                                 children: [
                                   Stack(
                                     children: [
-                                      CircleAvatar(
+                                      const CircleAvatar(
                                         maxRadius: 25,
                                         backgroundColor: Color(0xff8E8E93),
                                       ),
@@ -73,22 +73,22 @@ class TeamMember extends StatelessWidget {
                                           child: Container(
                                         height: 15,
                                         width: 15,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                           color: Colors.green,
                                         ),
                                       ))
                                     ],
                                   ),
-                                  Icon(Icons.more_vert, color: Colors.white,)
+                                  const Icon(Icons.more_vert, color: Colors.white,)
                                 ],
                               ),
-                              SizedBox(height: 15,),
+                              const SizedBox(height: 15,),
                               myStyle('Shoo Phar Nho', 16, Colors.white, FontWeight.w700),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
-                              myStyle('pharno@email.com', 12, Color((0xffE9E9EB)), FontWeight.w400),
+                              myStyle('pharno@email.com', 12, const Color((0xffE9E9EB)), FontWeight.w400),
                             ],
                           ),
                         ),

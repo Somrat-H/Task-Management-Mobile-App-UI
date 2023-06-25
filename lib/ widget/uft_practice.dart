@@ -1,26 +1,23 @@
 import 'dart:convert';
-import 'package:flutter/foundation.dart';
-
 import 'package:flutter/material.dart';
-import 'package:somrat/ui/qrScanner/scanner.dart';
+
 class UtfScreen extends StatefulWidget {
- const UtfScreen({Key? key}) : super(key: key);
+  const UtfScreen({Key? key}) : super(key: key);
 
   @override
   State<UtfScreen> createState() => _UtfScreenState();
 }
 
 class _UtfScreenState extends State<UtfScreen> {
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
   // QRViewController ? Controller;
   // final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
   // var result = "";
+  // ignore: prefer_typing_uninitialized_variables
   var encode;
+  // ignore: prefer_typing_uninitialized_variables
   var decode;
 
-
-
-  @override
   // Widget scanner(BuildContext context) {
   //   return  MobileScanner(
   //       fit: BoxFit.contain,
@@ -49,7 +46,6 @@ class _UtfScreenState extends State<UtfScreen> {
   //     );
   //
   // }
-
 
   // void _onQRViewCreated(QRViewController controller) {
   //   setState(() {
@@ -82,27 +78,25 @@ class _UtfScreenState extends State<UtfScreen> {
   //     // onPermissionSet: (ctrl, p) => _onPermissionSet(context, ctrl, p),
   //   );
   // }
-  void endcoing(){
+  void endcoing() {
     var strBytes = utf8.encode(_controller.text.toString());
     // encode = base64Encode(strBytes);
     encode = strBytes;
-    setState(() {
-
-    });
+    setState(() {});
   }
-  void decoding(){
+
+  void decoding() {
     // var decodeBytes = base64Decode(encode);
     decode = utf8.decode(encode);
-    setState(() {
-
-    });
+    setState(() {});
   }
+
   @override
   void dispose() {
     _controller.dispose();
-    // TODO: implement dispose
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -113,47 +107,57 @@ class _UtfScreenState extends State<UtfScreen> {
             children: [
               TextField(
                 controller: _controller,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: 'Enter your Data',
                 ),
               ),
-              SizedBox(height: 15,),
-
+              const SizedBox(
+                height: 15,
+              ),
               MaterialButton(
                 color: Colors.purple,
-                onPressed: (){
+                onPressed: () {
                   endcoing();
-                  setState(() {
-
-                  });
-              },
-              child: Text('Endcode'),
+                  setState(() {});
+                },
+                child: const Text('Endcode'),
               ),
-              SizedBox(height: 20,),
-              encode == null ? Text('Endcode Data : No data found') : Text("Encode Data : $encode"),
-              SizedBox(height: 30,),
+              const SizedBox(
+                height: 20,
+              ),
+              encode == null
+                  ? const Text('Endcode Data : No data found')
+                  : Text("Encode Data : $encode"),
+              const SizedBox(
+                height: 30,
+              ),
               MaterialButton(
                 color: Colors.deepPurple,
-                onPressed: (){
-                decoding();
-                setState(() {
-
-                });
-              }, child: Text(
-                'Decode the encoding data'
-              ),),
-              SizedBox(height: 20,),
-              decode == null ? Text('Decode data : no data found') : Text('Decode data : $decode'),
-
-              SizedBox(height: 40,),
-
-              InkWell(
-                onTap: (){
-                   // Navigator.push(context, MaterialPageRoute(builder: (_)=> BarcodeScannerDemo()));
+                onPressed: () {
+                  decoding();
+                  setState(() {});
                 },
-                child: CircleAvatar(
+                child: const Text('Decode the encoding data'),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              decode == null
+                  ? const Text('Decode data : no data found')
+                  : Text('Decode data : $decode'),
+              const SizedBox(
+                height: 40,
+              ),
+              InkWell(
+                onTap: () {
+                  // Navigator.push(context, MaterialPageRoute(builder: (_)=> BarcodeScannerDemo()));
+                },
+                child: const CircleAvatar(
                   maxRadius: 30,
-                  child: Icon(Icons.qr_code_scanner, size: 28,),
+                  child: Icon(
+                    Icons.qr_code_scanner,
+                    size: 28,
+                  ),
                 ),
               )
             ],

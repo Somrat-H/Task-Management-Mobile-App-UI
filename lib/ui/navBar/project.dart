@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_project_tile.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
 import 'package:somrat/ui/data/project_data.dart';
 
 import '../../ widget/custom_project_deatils.dart';
@@ -18,7 +18,7 @@ class _ProjectState extends State<Project> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: Color(0xff191A22),
+      backgroundColor: const Color(0xff191A22),
       body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
@@ -33,12 +33,12 @@ class _ProjectState extends State<Project> {
                         children: [
                           IconButton(onPressed: (){
                             Navigator.pop(context);
-                          }, icon: Icon(Icons.arrow_back_ios), color: Colors.white ),
+                          }, icon: const Icon(Icons.arrow_back_ios), color: Colors.white ),
                           myStyle('Project', 16, Colors.white, FontWeight.w700),
-                          Icon(Icons.more_vert)
+                          const Icon(Icons.more_vert)
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       SizedBox(
@@ -70,20 +70,20 @@ class _ProjectState extends State<Project> {
                                             decoration: BoxDecoration(
                                               borderRadius: BorderRadius.circular(8),
                                               // color: projectDummyData[index].isTap == true ? Colors.blue : Color(0xff292B3E),
-                                              color: track == index ? Colors.blue : Color(0xff292B3E),
+                                              color: track == index ? Colors.blue : const Color(0xff292B3E),
                                             ),
                                             child: Center(
-                                                child: myStyle(projectDummyData[index].numProject.toString(), 16, track == index ? Colors.white : Color(0xff8A8A8E), FontWeight.w700)
+                                                child: myStyle(projectDummyData[index].numProject.toString(), 16, track == index ? Colors.white : const Color(0xff8A8A8E), FontWeight.w700)
                                               // child: myStyle(projectDummyData[index].numProject.toString(), 16, projectDummyData[index].isTap == true ? Colors.white : Color(0xff8A8A8E), FontWeight.w700),
                                             ),
 
                                           ),
-                                          SizedBox(width: 15,),
+                                          const SizedBox(width: 15,),
                                           // myStyle(projectDummyData[index].title.toString(), 16, projectDummyData[index].isTap == true ? Colors.white : Color(0xff8A8A8E), FontWeight.w700),
-                                          myStyle(projectDummyData[index].title.toString(), 16, track == index ? Colors.white : Color(0xff8A8A8E), FontWeight.w700),
+                                          myStyle(projectDummyData[index].title.toString(), 16, track == index ? Colors.white : const Color(0xff8A8A8E), FontWeight.w700),
                                         ],
                                       ),
-                                      SizedBox(height: 20,),
+                                      const SizedBox(height: 20,),
 
                                       // LayoutBuilder(
                                       //
@@ -104,7 +104,7 @@ class _ProjectState extends State<Project> {
                                 ),
                               );
                             }, separatorBuilder: (_, index){
-                          return SizedBox(
+                          return const SizedBox(
                             width: 25,
                           );
                         }, itemCount: projectDummyData.length),
@@ -121,63 +121,63 @@ class _ProjectState extends State<Project> {
                       children: [
                         InkWell(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (_)=> ProjectDetails()));
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
                           child: myCustomProjectTile(context),
                         ),
-                        SizedBox(height: 5,),
+                        const SizedBox(height: 5,),
                         InkWell(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (_)=> ProjectDetails()));
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
                           child: myCustomProjectTile(context),
                         ),
-                        SizedBox(height: 5,),
+                        const SizedBox(height: 5,),
                         InkWell(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (_)=> ProjectDetails()));
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
                           child: myCustomProjectTile(context),
                         ),
-                        SizedBox(height: 5,),
+                        const SizedBox(height: 5,),
                         InkWell(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (_)=> ProjectDetails()));
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
                           child: myCustomProjectTile(context),
                         ),
-                        SizedBox(height: 5,),
+                        const SizedBox(height: 5,),
                         InkWell(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (_)=> ProjectDetails()));
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
                           child: myCustomProjectTile(context),
                         ),
-                        SizedBox(height: 5,),
+                        const SizedBox(height: 5,),
                         InkWell(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (_)=> ProjectDetails()));
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
                           child: myCustomProjectTile(context),
                         ),
-                        SizedBox(height: 5,),
+                        const SizedBox(height: 5,),
                         InkWell(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (_)=> ProjectDetails()));
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
                           child: myCustomProjectTile(context),
                         ),
-                        SizedBox(height: 5,),
+                        const SizedBox(height: 5,),
                         InkWell(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (_)=> ProjectDetails(),));
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails(),));
                           },
                           child: myCustomProjectTile(context),
                         ),
-                        SizedBox(height: 5,),
+                        const SizedBox(height: 5,),
                         InkWell(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (_)=> ProjectDetails(),));
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails(),));
                           },
                           child: myCustomProjectTile(context),
                         ),

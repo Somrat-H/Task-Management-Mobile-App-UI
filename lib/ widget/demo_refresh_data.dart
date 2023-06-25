@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 class PullRefreshPage extends StatefulWidget {
-  const PullRefreshPage();
+  const PullRefreshPage({Key? key}) : super(key: key);
 
   @override
   State<PullRefreshPage> createState() => _PullRefreshPageState();

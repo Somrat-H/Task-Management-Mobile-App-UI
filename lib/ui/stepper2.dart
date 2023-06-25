@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_button.dart';
 import 'package:somrat/%20widget/custom_color.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
 import 'package:somrat/ui/login.dart';
 import 'package:somrat/ui/on_boarding3.dart';
 import 'package:somrat/ui/steeper3.dart';
@@ -15,7 +15,7 @@ class Stepper2 extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: 65,
               width: double.infinity,
               child: Padding(

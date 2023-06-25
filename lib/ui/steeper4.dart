@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_button.dart';
 import 'package:somrat/%20widget/custom_color.dart';
 import 'package:somrat/%20widget/custom_steeper_bar.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
+import 'package:somrat/ui/steeper3.dart';
 import 'package:somrat/ui/stepper5.dart';
 class Stepper4 extends StatelessWidget {
   const Stepper4({Key? key}) : super(key: key);
@@ -14,8 +15,8 @@ class Stepper4 extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-              customStepperAppBar('assets/steeper4.png', (){
-                        Navigator.pop(context);
+              customStepperAppBar('assets/steepper4.png', (){
+                        Navigator.push(context, MaterialPageRoute(builder: (_)=> const Steeper3()));
               }),
               myStyle('Enter Your Code Team', 16, Colors.white, FontWeight.w700),
             const SizedBox(height: 16,),
@@ -53,7 +54,9 @@ class Stepper4 extends StatelessWidget {
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (_)=> const Stepper5()));
               },
-              child: customButton(58, double.infinity, btnColor, 28, myStyle('Continue', 17, Colors.white, FontWeight.w600)),
+              child:  Padding(padding: const EdgeInsets.only(left: 16, right: 16),
+                child: customButton(58, double.infinity, btnColor, 28, myStyle('Continue', 17, Colors.white, FontWeight.w600)),
+              ),
             )
 
           ],

@@ -4,7 +4,7 @@
 import 'package:flutter/material.dart';
 
 import 'custom_color.dart';
-import 'myStyle.dart';
+import 'my_style.dart';
 
 customTile(BuildContext context){
   return  Container(
@@ -23,11 +23,11 @@ customTile(BuildContext context){
             children: [
               Row(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 16),
                       child: Icon(Icons.check_box_outlined, color: Colors.white,),
                     ),
-                    SizedBox(width: 10,),
+                    const SizedBox(width: 10,),
                     myStyle('Research Analysis', 16, Colors.white, FontWeight.w400),
                   ]
               ),
@@ -37,7 +37,7 @@ customTile(BuildContext context){
                     height: 30,
                     width: 70,
                     decoration: BoxDecoration(
-                        color: Color(0xffFEEBF5) ,
+                        color: const Color(0xffFEEBF5) ,
                         borderRadius: BorderRadius.circular(15)
                     ),
                     child: Center(
@@ -54,13 +54,13 @@ customTile(BuildContext context){
           data: SliderTheme.of(context).copyWith(
               trackHeight: 10,
               thumbColor: Colors.transparent,
-              thumbShape: RoundSliderThumbShape(enabledThumbRadius: 0.0)),
+              thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 0.0)),
 
           child: Slider(
               max: 100,
               min: 0,
               activeColor: Colors.deepPurpleAccent,
-              inactiveColor: Color(0xff363748),
+              inactiveColor: const Color(0xff363748),
               value: 25, onChanged: (v){
 
           }),
@@ -70,12 +70,12 @@ customTile(BuildContext context){
           child: Row(
             children: [
               Container(height: 10, width: 10,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   color: Color(0xff76BBAA),
                 ),
               ) ,
-              SizedBox(width: 10,),
+              const SizedBox(width: 10,),
               myStyle('2 Days Left', 14, Colors.white, FontWeight.w400),
             ],
           ),

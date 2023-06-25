@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_button.dart';
-import 'package:somrat/%20widget/myStyle.dart';
+import 'package:somrat/%20widget/my_style.dart';
 
 myAddTagBottomSheet(BuildContext context) {
   return showModalBottomSheet<dynamic>(
@@ -16,7 +16,7 @@ myAddTagBottomSheet(BuildContext context) {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      myStyle('Add Tags', 16, Color(0xffF8F8F8), FontWeight.w700),
+                      myStyle('Add Tags', 16, const Color(0xffF8F8F8), FontWeight.w700),
                       IconButton(onPressed: (){
                         Navigator.pop(context);
                       }, icon: const Icon(Icons.cancel_outlined)),
