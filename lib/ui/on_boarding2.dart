@@ -4,7 +4,7 @@ import 'package:somrat/ widget/myStyle.dart';
 import 'package:somrat/ui/login.dart';
 import 'package:somrat/ui/on_boarding3.dart';
 class OnBoarding2 extends StatelessWidget {
-  const OnBoarding2({Key? key}) : super(key: key);
+  const OnBoarding2({Key, key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
