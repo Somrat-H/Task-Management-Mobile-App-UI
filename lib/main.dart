@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:somrat/ui/navBar/navbar.dart';
-
+import 'package:somrat/ui/on_boarding1.dart';
+import 'package:somrat/ui/qrScanner/scanner.dart';
+import 'package:somrat/ui/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -30,6 +30,7 @@ class HomePage extends StatelessWidget {
             ),
 
             SizedBox(height: height * 0.02,),
+<<<<<<< HEAD
             
            Padding(
               padding: const EdgeInsets.only(left: 16),
@@ -104,6 +105,92 @@ class HomePage extends StatelessWidget {
             //         ),
             //       );
             //     }),
+=======
+
+
+
+             Padding(
+                 padding: const EdgeInsets.only(left: 16),
+                 child: SizedBox(
+                   height: height * 0.10,
+                   width: double.infinity,
+                   child: ListView.separated(
+                       shrinkWrap: true,
+                       scrollDirection: Axis.horizontal,
+                       itemCount: dummyData.length,
+                       itemBuilder: (_, index) {
+                         return Container(
+                           height: height * 0.08,
+                           width: width * .35,
+                           decoration: BoxDecoration(
+                             color: ctnColor,
+                             borderRadius: BorderRadius.circular(8),
+                           ),
+                           child: Row(
+                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Container(
+                                 height: height * 0.05,
+                                 width: width * 0.015,
+                                 color: dummyData[index].color,
+                               ),
+                               myStyle(dummyData[index].num.toString(), 20,
+                                   Colors.white, FontWeight.w700),
+                               myStyle(dummyData[index].status.toString(), 14,
+                                   Colors.white, FontWeight.w400),
+                               SizedBox(width: width * .05,)
+                             ],
+                           ),
+                         );
+                       },
+
+
+                       separatorBuilder: (context, index) {
+                         return SizedBox(width: width * .020,);
+                       }),
+                 )
+             ),
+
+
+
+           // if(width > 400)
+           // Expanded(
+           //    child: GridView.builder(
+           //        itemCount: dummyData.length,
+           //        gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
+           //            mainAxisSpacing: 5,
+           //            crossAxisSpacing: 5,
+           //            crossAxisCount: 3,
+           //            childAspectRatio: 1.2),
+           //        itemBuilder: (context, index){
+           //          return Container(
+           //            height: height * 0.08,
+           //            width: width * .20,
+           //            decoration: BoxDecoration(
+           //              color: ctnColor,
+           //              borderRadius: BorderRadius.circular(8),
+           //            ),
+           //            child: Row(
+           //              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+           //              children: [
+           //                Container(
+           //                  height: height * 0.05,
+           //                  width: width * 0.015,
+           //                  color: dummyData[index].color,
+           //                ),
+           //                myStyle(dummyData[index].num.toString(), 20,
+           //                    Colors.white, FontWeight.w700),
+           //                myStyle(dummyData[index].status.toString(), 14,
+           //                    Colors.white, FontWeight.w400),
+           //                SizedBox(width: width * .05,)
+           //              ],
+           //            ),
+           //          );
+           //        }),
+           //  ),
+
+
+>>>>>>> 354f041718cc1bcec77f2cf3efb1c2ad7e51635a
             SizedBox(
               height: width * 0.06,
             ),
