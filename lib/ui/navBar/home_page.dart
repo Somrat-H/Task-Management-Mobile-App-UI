@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
             ),
 
             SizedBox(height: height * 0.02,),
-<<<<<<< HEAD
+// <<<<<<< HEAD
             
            Padding(
               padding: const EdgeInsets.only(left: 16),
@@ -105,7 +105,7 @@ class HomePage extends StatelessWidget {
             //         ),
             //       );
             //     }),
-=======
+// =======
 
 
 
@@ -190,7 +190,7 @@ class HomePage extends StatelessWidget {
            //  ),
 
 
->>>>>>> 354f041718cc1bcec77f2cf3efb1c2ad7e51635a
+// >>>>>>> 354f041718cc1bcec77f2cf3efb1c2ad7e51635a
             SizedBox(
               height: width * 0.06,
             ),
