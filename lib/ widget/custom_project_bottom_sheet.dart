@@ -13,6 +13,7 @@ myCustomProjectBottomSheet(BuildContext context){
           child: Column(
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   myStyle('Add Tags', 16, Colors.white, FontWeight.w700),
                   IconButton(onPressed: (){
@@ -45,16 +46,14 @@ myCustomProjectBottomSheet(BuildContext context){
                 child:    myStyle("Color", 16, Color(0xffF8F8F8), FontWeight.w400),
               ),
               GridView.builder(
+                shrinkWrap: true,
                 itemCount: myContainer.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    mainAxisSpacing: 5,
-                    crossAxisSpacing: 5,
+                    mainAxisSpacing: 7,
+                    crossAxisSpacing: 7,
                     crossAxisCount: 5, ),
                   itemBuilder: (_, index){
-                    return Container(
-                        height: 30,
-                        width: 30,
-                        child: myContainer[index]);
+                    return  Expanded(child: myContainer[index]);
                   }),
               SizedBox(
                 height: 25,
