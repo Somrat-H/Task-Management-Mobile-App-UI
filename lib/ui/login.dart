@@ -29,7 +29,7 @@ class _LogInState extends State<LogIn> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (_)=> const OnBoarding3()));
+                      Navigator.push(context, MaterialPageRoute(builder: (_)=>  OnBoarding3()));
                     }, icon: const Icon(Icons.close, color: Colors.white,)),
                     myStyle('Sign Up', 16, Colors.white, FontWeight.w700),
                   ],

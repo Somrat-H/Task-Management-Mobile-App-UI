@@ -6,7 +6,7 @@ import 'package:somrat/%20widget/custom_tile.dart';
 import 'package:somrat/%20widget/myStyle.dart';
 import 'package:somrat/ui/data/dummy_data.dart';
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({Key ?key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +30,8 @@ class HomePage extends StatelessWidget {
             ),
 
             SizedBox(height: height * 0.02,),
-            if(width )
-
-            width < 400.00 ? Padding(
+            
+           Padding(
               padding: const EdgeInsets.only(left: 16),
               child: SizedBox(
                 height: height * 0.10,
@@ -72,38 +71,39 @@ class HomePage extends StatelessWidget {
                       return SizedBox(width: width * .020,);
                     }),
               ),
-            ) : GridView.builder(
-                itemCount: dummyData.length,
-                gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
-                    mainAxisSpacing: 5,
-                    crossAxisSpacing: 5,
-                    crossAxisCount: 2,
-                    childAspectRatio: 1.2),
-                itemBuilder: (context, index){
-                  return Container(
-                    height: height * 0.08,
-                    width: width * .20,
-                    decoration: BoxDecoration(
-                      color: ctnColor,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          height: height * 0.05,
-                          width: width * 0.015,
-                          color: dummyData[index].color,
-                        ),
-                        myStyle(dummyData[index].num.toString(), 20,
-                            Colors.white, FontWeight.w700),
-                        myStyle(dummyData[index].status.toString(), 14,
-                            Colors.white, FontWeight.w400),
-                        SizedBox(width: width * .05,)
-                      ],
-                    ),
-                  );
-                }),
+            ) ,
+            //  GridView.builder(
+            //     itemCount: dummyData.length,
+            //     gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
+            //         mainAxisSpacing: 5,
+            //         crossAxisSpacing: 5,
+            //         crossAxisCount: 2,
+            //         childAspectRatio: 1.2),
+            //     itemBuilder: (context, index){
+            //       return Container(
+            //         height: height * 0.08,
+            //         width: width * .20,
+            //         decoration: BoxDecoration(
+            //           color: ctnColor,
+            //           borderRadius: BorderRadius.circular(8),
+            //         ),
+            //         child: Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //           children: [
+            //             Container(
+            //               height: height * 0.05,
+            //               width: width * 0.015,
+            //               color: dummyData[index].color,
+            //             ),
+            //             myStyle(dummyData[index].num.toString(), 20,
+            //                 Colors.white, FontWeight.w700),
+            //             myStyle(dummyData[index].status.toString(), 14,
+            //                 Colors.white, FontWeight.w400),
+            //             SizedBox(width: width * .05,)
+            //           ],
+            //         ),
+            //       );
+            //     }),
             SizedBox(
               height: width * 0.06,
             ),
