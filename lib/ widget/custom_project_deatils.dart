@@ -17,6 +17,7 @@ class ProjectDetails extends StatelessWidget {
       ),
       appBar: AppBar(
         elevation: 0,
+        centerTitle: true,
         backgroundColor: Color(0xff191A22),
         title: myStyle('Project Details', 16, Colors.white, FontWeight.w700),
         leading: IconButton(
@@ -35,7 +36,7 @@ class ProjectDetails extends StatelessWidget {
         child: Column(
           children: [
              Container(
-               height: 270,
+               height: MediaQuery.of(context).size.height * .42,
                width: double.infinity,
               decoration: BoxDecoration(
                 color: Color(0xff292B3E),
