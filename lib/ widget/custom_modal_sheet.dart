@@ -5,7 +5,7 @@ import 'package:somrat/ui/team_member.dart';
 
 myCustomBottomSheet(BuildContext context) {
   return showModalBottomSheet(
-      backgroundColor: Color(0xff292B3E),
+      backgroundColor: const Color(0xff292B3E),
       isScrollControlled: true,
       context: context,
       builder: (context) {
@@ -46,7 +46,7 @@ myCustomBottomSheet(BuildContext context) {
                   TextField(
                     decoration: InputDecoration(
                         hintText: 'Enter Your Project Name',
-                        hintStyle: TextStyle(
+                        hintStyle: const TextStyle(
                           color: Colors.white,
                         ),
                         prefixIcon: const Icon(
@@ -54,7 +54,7 @@ myCustomBottomSheet(BuildContext context) {
                           color: Colors.white,
                         ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
+                          borderSide: const BorderSide(color: Colors.white),
                           borderRadius: BorderRadius.circular(20),
                         )),
                   ),
@@ -72,7 +72,7 @@ myCustomBottomSheet(BuildContext context) {
                   TextField(
                     decoration: InputDecoration(
                         hintText: 'Select Your Team',
-                        hintStyle: TextStyle(
+                        hintStyle: const TextStyle(
                           color: Colors.white,
                         ),
                         prefixIcon: const Icon(
@@ -84,7 +84,7 @@ myCustomBottomSheet(BuildContext context) {
                           color: Colors.white,
                         ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
+                          borderSide: const BorderSide(color: Colors.white),
                           borderRadius: BorderRadius.circular(20),
                         )),
                   ),
@@ -102,7 +102,7 @@ myCustomBottomSheet(BuildContext context) {
                   TextField(
                     decoration: InputDecoration(
                         hintText: 'Ongoing',
-                        hintStyle: TextStyle(
+                        hintStyle: const TextStyle(
                           color: Colors.white,
                         ),
                         prefixIcon: const Icon(
@@ -114,7 +114,7 @@ myCustomBottomSheet(BuildContext context) {
                           color: Colors.white,
                         ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
+                          borderSide: const BorderSide(color: Colors.white),
                           borderRadius: BorderRadius.circular(20),
                         )),
                   ),
@@ -132,7 +132,7 @@ myCustomBottomSheet(BuildContext context) {
                   TextField(
                     decoration: InputDecoration(
                         hintText: '2 March 2021',
-                        hintStyle: TextStyle(
+                        hintStyle: const TextStyle(
                           color: Colors.white,
                         ),
                         prefixIcon: const Icon(
@@ -140,7 +140,7 @@ myCustomBottomSheet(BuildContext context) {
                           color: Colors.white,
                         ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
+                          borderSide: const BorderSide(color: Colors.white),
                           borderRadius: BorderRadius.circular(20),
                         )),
                   ),

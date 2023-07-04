@@ -48,6 +48,9 @@ class OnBoarding3 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                 myStyle('Update Progress\nYour Work for The\nTeam', 36, Colors.white, FontWeight.w700),
+                Divider(
+              height: MediaQuery.of(context).size.height * .01,
+            ),
                 Container(
                   height: 8,
                   width: 48,
@@ -60,10 +63,13 @@ class OnBoarding3 extends StatelessWidget {
                 ),
               ],),
             ),
-            const SizedBox(height: 10,),
+            // const SizedBox(height: 10,),
             
-             
+            Divider(
+              height: MediaQuery.of(context).size.height * .10,
+            ), 
             InkWell(
+              autofocus: false,
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (_)=> const Signup()));
               },
@@ -105,6 +111,7 @@ class OnBoarding3 extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 16, right: 16),
               child: InkWell(
+                autofocus: false,
                 onTap: (){
 
                   Navigator.push(context, MaterialPageRoute(builder: (_)=> const LogIn()));

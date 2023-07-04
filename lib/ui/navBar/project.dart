@@ -49,6 +49,7 @@ class _ProjectState extends State<Project> {
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (_, index){
                               return InkWell(
+                                autofocus: false,
                                 onTap: (){
                                   // projectDummyData[index].isTap = true;
                                   track = index;
@@ -120,6 +121,7 @@ class _ProjectState extends State<Project> {
                     child: Column(
                       children: [
                         InkWell(
+                          autofocus: false,
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
@@ -127,6 +129,7 @@ class _ProjectState extends State<Project> {
                         ),
                         const SizedBox(height: 5,),
                         InkWell(
+                          autofocus: false,
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
@@ -134,6 +137,7 @@ class _ProjectState extends State<Project> {
                         ),
                         const SizedBox(height: 5,),
                         InkWell(
+                          autofocus: false,
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
@@ -141,6 +145,7 @@ class _ProjectState extends State<Project> {
                         ),
                         const SizedBox(height: 5,),
                         InkWell(
+                          autofocus: false,
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
@@ -148,6 +153,7 @@ class _ProjectState extends State<Project> {
                         ),
                         const SizedBox(height: 5,),
                         InkWell(
+                          autofocus: false,
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
@@ -155,6 +161,7 @@ class _ProjectState extends State<Project> {
                         ),
                         const SizedBox(height: 5,),
                         InkWell(
+                          autofocus: false,
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
@@ -162,6 +169,7 @@ class _ProjectState extends State<Project> {
                         ),
                         const SizedBox(height: 5,),
                         InkWell(
+                          autofocus: false,
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails()));
                           },
@@ -169,6 +177,7 @@ class _ProjectState extends State<Project> {
                         ),
                         const SizedBox(height: 5,),
                         InkWell(
+                          autofocus: false,
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails(),));
                           },
@@ -176,6 +185,7 @@ class _ProjectState extends State<Project> {
                         ),
                         const SizedBox(height: 5,),
                         InkWell(
+                          autofocus: false,
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProjectDetails(),));
                           },

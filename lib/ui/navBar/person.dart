@@ -18,6 +18,7 @@ class Profile extends StatelessWidget {
                 children: [
                   myStyle("My Profile", 16, const Color(0xffF8F8F8), FontWeight.w700),
                   InkWell(
+                    autofocus: false,
                       onTap: (){
                         Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=> const LogIn()));
                       },

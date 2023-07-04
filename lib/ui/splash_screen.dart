@@ -36,12 +36,17 @@ class SplashScreen extends StatelessWidget {
               child: myStyle('Your Personal Task Manager', 17,
                   const Color(0xffE9E9EB), FontWeight.normal),
             ),
-            Divider(
-              height: MediaQuery.of(context).size.height * .30,
+            // Divider(
+            //   height: MediaQuery.of(context).size.height * .38,
+            // ),
+            SizedBox(
+              
+              height: MediaQuery.of(context).size.height * .38,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 16, right: 16),
               child: InkWell(
+                autofocus: false,
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (_)=>OnBoarding1()));
 

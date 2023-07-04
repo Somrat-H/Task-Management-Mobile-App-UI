@@ -25,6 +25,7 @@ class Signup extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(builder: (_)=> const OnBoarding3()));
                   }, icon: const Icon(Icons.close, color: Colors.white,)),
                  InkWell(
+                  autofocus: false,
                    onTap: (){
                      Navigator.push(context, MaterialPageRoute(builder: (_)=> const LogIn()));
                    },
@@ -73,6 +74,7 @@ class Signup extends StatelessWidget {
             ),
             Padding(padding: const EdgeInsets.only(left: 16, right: 16),
                 child:  InkWell(
+                  autofocus: false,
                   onTap: (){
                     Navigator.push(context, MaterialPageRoute(builder: (_)=> const Stepper1()));
                   },

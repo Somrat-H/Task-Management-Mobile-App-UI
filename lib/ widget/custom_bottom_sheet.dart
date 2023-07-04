@@ -61,7 +61,11 @@ myBottomSheet(BuildContext context) {
                   TextField(
                     decoration: InputDecoration(
                       hintText: 'Select Your Team',
-                      border: OutlineInputBorder(
+                      hintStyle: const TextStyle(
+                        color: Colors.white,
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(color: Colors.white),
                           borderRadius: BorderRadius.circular(
                         25,
                       )),
@@ -72,7 +76,7 @@ myBottomSheet(BuildContext context) {
                   ),
                   Row(
                     children: [
-                      const Icon(Icons.add),
+                      const Icon(Icons.add, color: Colors.white,),
                       const SizedBox(
                         width: 60,
                       ),
@@ -84,7 +88,7 @@ myBottomSheet(BuildContext context) {
                   ),
                   InkWell(
                     onTap: (){
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=> NavBar()));
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=> const NavBar()));
                     },
                     child: customButton(60, double.infinity, Colors.blue, 25,
                       myStyle('Invite', 16, Colors.white, FontWeight.w700)),

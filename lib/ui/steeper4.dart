@@ -51,6 +51,7 @@ class Stepper4 extends StatelessWidget {
             ),
             const SizedBox(height: 50,),
             InkWell(
+              autofocus: false,
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (_)=> const Stepper5()));
               },

@@ -68,6 +68,7 @@ class Steeper3 extends StatelessWidget {
             ),
             const SizedBox(height: 30,),
             InkWell(
+              autofocus: false,
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (_)=> const Stepper4()));
               },

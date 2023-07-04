@@ -61,6 +61,7 @@ class Stepper5 extends StatelessWidget {
             ),
             const SizedBox(height: 50,),
             InkWell(
+              autofocus: false,
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (_)=> const NavBar()));
               },
@@ -68,7 +69,6 @@ class Stepper5 extends StatelessWidget {
                 child: customButton(58, double.infinity, btnColor, 28, myStyle('Continue', 17, Colors.white, FontWeight.w600)),
               ),
             )
-
           ],
         ),
       ),

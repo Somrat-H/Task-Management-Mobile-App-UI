@@ -120,8 +120,11 @@ class OnBoarding1 extends StatelessWidget {
               ],),
             ),
             
-             
+             Divider(
+              height: MediaQuery.of(context).size.height * .15,
+            ),
             InkWell(
+              autofocus: false,
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (_)=> const OnBoarding2()));
               },
