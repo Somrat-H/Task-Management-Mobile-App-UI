@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:somrat/%20widget/custom_button.dart';
 import 'package:somrat/%20widget/my_style.dart';
+import 'package:somrat/ui/navBar/navbar.dart';
 
 myBottomSheet(BuildContext context) {
   return showModalBottomSheet<dynamic>(
+    backgroundColor: const Color(0xff292B3E),
       isScrollControlled: true,
       context: context,
       builder: (context) {
@@ -80,8 +82,13 @@ myBottomSheet(BuildContext context) {
                   const SizedBox(
                     height: 25,
                   ),
-                  customButton(60, double.infinity, Colors.blue, 25,
+                  InkWell(
+                    onTap: (){
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=> NavBar()));
+                    },
+                    child: customButton(60, double.infinity, Colors.blue, 25,
                       myStyle('Invite', 16, Colors.white, FontWeight.w700)),
+                  )
                 ],
               ),
             ),
